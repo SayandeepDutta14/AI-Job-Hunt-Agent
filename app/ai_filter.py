@@ -1,6 +1,3 @@
-# ai_filter.py
-# Keyword-based filtering — no API calls, no quota issues
-
 GOOD_KEYWORDS = [
     "python", "fastapi", "django", "flask", "backend", "rest api",
     "node", "express", "api developer", "microservices", "postgresql",
