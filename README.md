@@ -75,8 +75,8 @@ upwork-ai-agent/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/upwork-ai-agent.git
-cd upwork-ai-agent
+git clone https://github.com/sayandeepdutta14/AI-Job-Hunt-Agent.git
+cd AI-Job-Hunt-Agent
 ```
 
 ### 2. Create virtual environment
