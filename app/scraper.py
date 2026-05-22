@@ -1,4 +1,4 @@
-# scraper.py
+
 import requests
 import re
 
@@ -6,8 +6,8 @@ JOBICY_BASE = "https://jobicy.com/api/v2/remote-jobs"
 SEARCH_TAGS = ["python", "backend", "fastapi", "django", "nodejs", "api"]
 
 def strip_html(text):
-    clean = re.sub(r"<[^>]+>", " ", text)       # remove all HTML tags
-    clean = re.sub(r"\s+", " ", clean).strip()   # collapse whitespace
+    clean = re.sub(r"<[^>]+>", " ", text)     
+    clean = re.sub(r"\s+", " ", clean).strip()  
     return clean
 
 def fetch_jobs():
@@ -36,7 +36,7 @@ def fetch_jobs():
                 title   = job.get("jobTitle", "")
                 company = job.get("companyName", "")
                 url     = job.get("url", "")
-                desc    = strip_html(job.get("jobDescription", ""))[:400]  # ✅ clean HTML
+                desc    = strip_html(job.get("jobDescription", ""))[:400]
 
                 if job_id and job_id not in seen_ids:
                     seen_ids.add(job_id)
