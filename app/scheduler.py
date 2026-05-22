@@ -1,4 +1,4 @@
-# scheduler.py
+
 from apscheduler.schedulers.background import BackgroundScheduler
 from app.scraper import fetch_jobs
 from app.ai_filter import filter_jobs
@@ -6,7 +6,7 @@ from app.notifier import send_telegram_message
 
 scheduler = BackgroundScheduler()
 
-# Tracks sent URLs across runs to avoid duplicate notifications
+
 sent_job_urls = set()
 
 def run_agent():
@@ -37,7 +37,7 @@ def run_agent():
         print(f"  Sent: {job['title'][:60]}")
 
 def start_scheduler():
-    run_agent()  # Run immediately on startup
+    run_agent() 
     scheduler.add_job(run_agent, "interval", hours=3)
     scheduler.start()
     print("Scheduler started — runs every 3 hours.")
