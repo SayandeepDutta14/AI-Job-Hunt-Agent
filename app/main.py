@@ -1,4 +1,4 @@
-# main.py
+
 from fastapi import FastAPI
 from contextlib import asynccontextmanager
 from app.scheduler import start_scheduler
