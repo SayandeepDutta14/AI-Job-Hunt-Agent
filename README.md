@@ -157,19 +157,6 @@ The agent will:
 
 ---
 
-## 🌐 Deploy on Railway (Free, 24/7)
-
-1. Push your code to GitHub
-2. Go to https://railway.app and sign in with GitHub
-3. Click **New Project → Deploy from GitHub repo**
-4. Select your repository
-5. Go to **Variables** tab and add:
-   - `TELEGRAM_BOT_TOKEN`
-   - `TELEGRAM_CHAT_ID`
-   - `GEMINI_API_KEY`
-6. Railway will auto-deploy and run 24/7
-
----
 
 ## 🔧 Customization
 
