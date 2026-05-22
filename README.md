@@ -1,4 +1,4 @@
-# 🚀 Upwork AI Job Agent
+# 🚀 AI Job Hunt Agent
 
 A smart AI agent that automatically finds backend developer remote jobs every 3 hours and sends them directly to your Telegram.
 
@@ -27,7 +27,7 @@ A smart AI agent that automatically finds backend developer remote jobs every 3 
 Every 3 hours
       ↓
 Fetch jobs from Jobicy API
-(python, backend, fastapi, django, nodejs, api)
+(python, backend, fastapi, django, nodejs, api, springboot)
       ↓
 Gemini AI filtering
 (removes unrelated jobs intelligently)
