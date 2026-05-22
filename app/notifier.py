@@ -1,4 +1,4 @@
-# notifier.py
+
 import requests
 import os
 from dotenv import load_dotenv
@@ -13,7 +13,7 @@ def send_telegram_message(message):
     data = {
         "chat_id": CHAT_ID,
         "text": message
-        # No parse_mode — plain text only
+       
     }
     try:
         response = requests.post(url, data=data, timeout=10)
